@@ -4,8 +4,8 @@ Background fond, et 750px centré sur la page : V
 Texte float à la droite des images : V
 Bouton lire plus à droite de la page : V
 Footer du bas : V
-Header bien organisé : X
-Rajouter les icônes : X
+Header bien organisé : V
+Rajouter les icônes : V
 
 */
 
@@ -23,16 +23,23 @@ header {
 
     background-color: #F5E49F;
     width: 750px;
-    height: 5rem;
     margin: auto auto;
     padding: 2rem;
-    display: flex;
+    overflow: hidden;
 }
 
 /* Header */
 
+header>a>img {
+    float: left;
+    position: relative;
+    bottom: 0.7rem;
+}
+
+/* Logo du header */
+
 nav {
-    margin: auto;
+    float: right;
 }
 
 /* Nav bar */
@@ -43,7 +50,8 @@ nav>a {
     color: #fe8a00;
     font-family: oswald;
     font-size: 24px;
-    padding: 1rem;
+    padding: 1.3rem;
+    float: left;
 }
 
 /* Liens dans le header */
@@ -62,9 +70,7 @@ h2 {
 main {
     background-color: white;
     width: 750px;
-    height: auto;
     margin: 0px auto;
-    padding-top: 15px;
     padding: 2rem;
 }
 
@@ -105,7 +111,6 @@ footer {
     text-align: center;
     margin: 2em 2em;
     color: grey;
-
 }
 
 /* Footer */
@@ -118,3 +123,10 @@ article>img {
 }
 
 /* image présente dans les articles */
+
+
+i {
+    margin-right: 0.5rem;
+}
+
+/* Mask au début des sous-titres */
