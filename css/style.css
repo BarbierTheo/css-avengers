@@ -1,0 +1,120 @@
+/* ROAD MAP
+
+Background fond, et 750px centré sur la page : V
+Texte float à la droite des images : V
+Bouton lire plus à droite de la page : V
+Footer du bas : V
+Header bien organisé : X
+Rajouter les icônes : X
+
+*/
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fond.png);
+}
+
+/* Toute la page */
+
+header {
+
+    background-color: #F5E49F;
+    width: 750px;
+    height: 5rem;
+    margin: auto auto;
+    padding: 2rem;
+    display: flex;
+}
+
+/* Header */
+
+nav {
+    margin: auto;
+}
+
+/* Nav bar */
+
+nav>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fe8a00;
+    font-family: oswald;
+    font-size: 24px;
+    padding: 1rem;
+}
+
+/* Liens dans le header */
+
+h2 {
+    font-family: oswald;
+    color: #fe8a00;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+
+/* Sous-titres : Qui sommes-nous, Que faisons-nous */
+
+main {
+    background-color: white;
+    width: 750px;
+    height: auto;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding: 2rem;
+}
+
+/* Background principale */
+
+.clear {
+    clear: both;
+}
+
+/* Clears */
+
+article>p {
+    color: gray;
+    text-align: justify;
+}
+
+/* Texte dans les articles */
+
+article>ul {
+    color: gray;
+}
+
+
+/* Liste à la fin */
+
+article>a {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 0.7rem;
+    font-family: oswald;
+    float: right;
+}
+
+/* Bouton lire plus */
+
+footer {
+    text-align: center;
+    margin: 2em 2em;
+    color: grey;
+
+}
+
+/* Footer */
+
+article>img {
+    width: 40%;
+    float: left;
+    margin-right: 1rem;
+    height: auto;
+}
+
+/* image présente dans les articles */
